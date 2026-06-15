@@ -64,4 +64,25 @@
  ***
 
 
-5. 
+5. Suppose you want to display the top 3 trending songs from a 'songs' table based on play_count, but if two songs have the same play_count, the more recently added song should come first. Write the SQL query to achieve this
+
+
+ # song table
+
+   ***
+
+    CREATE TABLE songs (
+    sid int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255),
+    play_count int
+    )
+   ***
+
+
+# the more recently added song should come first.
+
+  ***
+
+  SELECT DISTINCT(play_count),name,added_date FROM songs order BY play_count DESC LIMIT 0,3
+
+  ***
