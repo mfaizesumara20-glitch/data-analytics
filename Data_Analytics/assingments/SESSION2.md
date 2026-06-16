@@ -1,60 +1,75 @@
-1. Create a table named MusicPlaylist with columns: id, song_name, artist, genre, and duration. Insert at least 5 records representing songs from your favorite Spotify playlist, then write a SELECT statement to retrieve all columns for all songs.
- 
- # table 
+1. Install MySQL Community Server or SQLite on your system and verify the installation by connecting to the database using the command line or a GUI tool like MySQL Workbench or DB Browser for SQLite.
+
+
+ ![alt text](image.png)
+
+ ![alt text](image-1.png)
+
+
  ***
 
- CREATE TABLE MusicPlaylist (
- mid int PRIMARY KEY AUTO_INCREMENT,
- song_name varchar(255),
- artist varchar(255),
- genre varchar(255),
-  duration time 
+ CREATE DATABASE hello
+ 
+
+ ***
+
+
+
+
+2. Create a new database named 'foodie_app' to simulate a Zomato-style backend.
+
+  ***
+    CREATE DATABASE foodie_app
+  ***
+
+
+
+3. Write a CREATE TABLE statement to define a 'restaurants' table in the 'foodie_app' database with the following columns: id (integer, primary key), name (varchar/character, max 100), cuisine (varchar/character, max 50), rating (decimal, e.g., 4.5), and location (varchar/character, max 100).
+ ***
+
+
+ CREATE TABLE restaurants (
+ rid int PRIMARY KEY AUTO_INCREMENT,
+ name varchar(255),
+ cuisine varchAR(255),
+ rating decimal,
+ location varchar(255)
  )
 
- ***
-
-# SELECT statement to retrieve all columns for all songs.
-
- ***
-
- SELECT * FROM music_playlist
-
- ***
-
-2. Write a SQL query to display only the song_name and artist columns from the MusicPlaylist table, showing just the first 3 records using the LIMIT keyword.
-
- ***
-
- SELECT song_name,artist FROM music_playlist LIMIT 0,3;
-
-
- ***
-
- 3. Suppose you have a table named FoodOrders with columns: id, restaurant, food_item, and order_date. Write a SQL query to list all unique restaurant names where you have placed orders, using the DISTINCT keyword.
- 
-
- ***
-
- SELECT DISTINCT ('restaurant') FROM FoodOrders
-
- ***
-
-4. Write a SQL query on the FoodOrders table to select food_item as 'Dish' and order_date as 'Date Ordered', displaying only these two columns with the column aliases in the output.
- 
-
- ***
-
- SELECT food_item AS 'dish', order_date as 'Date Ordered' from FoodOrders 
-
-
- ***
-
-
- 5. 
-You tried running this query: SELECT DISTINCT food_item, restaurant FROM FoodOrders LIMIT 2, but it returns an error or doesn't work as expected. Identify and fix the mistake in the query
  
  ***
 
-you need to have 2 numbers in the limit to run this query propely
 
+
+4.Design and create a 'users' table for a Flipkart-style app with columns: user_id (primary key), username, email, phone_number, and created_at (date/time). Pick appropriate data types for each column. Think about which columns should be unique and which data types best fit email and phone numbers.
+ 
  ***
+  
+  CREATE TABLE users (
+ user_id int PRIMARY KEY AUTO_INCREMENT,
+ username varchar(255),
+ email varchar(255),
+ phone_number int,
+ created_date date
+ )
+  
+
+  ***
+
+
+
+
+5.Intentionally make a mistake in your CREATE TABLE statement (such as missing a comma or using an unsupported data type), run it, and then fix the error based on the message you receive. Take a screenshot of the error and the corrected SQL statement for your records.
+
+
+![alt text](image-2.png)
+
+
+ # correct statment
+  ***
+    
+    CREATE TABLE shop (
+    sid int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255)
+    ) 
+  ***
