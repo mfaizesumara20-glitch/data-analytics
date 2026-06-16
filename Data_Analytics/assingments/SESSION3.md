@@ -1,7 +1,7 @@
 1. Create a table called Playlist with columns: id (INT, primary key), song_name (VARCHAR), artist (VARCHAR), and duration (INT, seconds). Insert a single row for your current favorite song.
 
  # table
-    ***
+***
      CREATE TABLE Playlist (
      pid int PRIMARY KEY AUTO_INCREMENT,
      song_name varchar(255),
@@ -9,9 +9,9 @@
      duration int 
      )
     
-    ***
+ ***
 
-      ![alt text](image-3.png)
+![alt text](image-3.png)
 
 
 
