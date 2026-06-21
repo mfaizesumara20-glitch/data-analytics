@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammadfaize Sumara | Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              soft: '0 35px 120px rgba(15, 23, 42, 0.08)',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-12px)' },
+              },
+            },
+            animation: {
+              float: 'float 6s ease-in-out infinite',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .fade-reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.9s ease, transform 0.9s ease;
+      }
+      .fade-reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .hero-bg {
+        background: radial-gradient(circle at top, rgba(129, 140, 248, 0.18), transparent 40%),
+          radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.16), transparent 30%);
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.86);
+        backdrop-filter: blur(14px);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/95 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8">
+        <div>
+          <a href="#home" class="text-xl font-semibold tracking-tight text-white">Mohammadfaize Sumara</a>
+        </div>
+        <nav class="hidden items-center gap-6 text-sm text-slate-300 md:flex">
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#tools" class="hover:text-white">Tools</a>
+          <a href="#experience" class="hover:text-white">Experience</a>
+          <a href="#education" class="hover:text-white">Education</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero-bg overflow-hidden pb-20">
+      <section id="home" class="mx-auto max-w-7xl px-6 pt-16 sm:px-8 lg:px-12">
+        <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div class="space-y-6">
+            <p class="inline-flex rounded-full bg-indigo-500/15 px-4 py-2 text-sm font-medium text-indigo-200">Data Analyst Portfolio</p>
+            <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">I am Mohammadfaize Sumara, a Data Analyst who turns raw information into confident decisions.</h1>
+            <p class="max-w-2xl text-lg leading-8 text-slate-300">With a strong foundation in SQL, Power BI, Python, Excel, and statistical storytelling, I help businesses uncover the story hidden inside their data.</p>
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400">Hire Me</a>
+              <a href="#experience" class="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-emerald-400 hover:text-emerald-300">View Experience</a>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-3xl border border-white/10 bg-slate-900/80 p-6 shadow-soft">
+                <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Years of experience</p>
+                <p class="mt-3 text-4xl font-semibold text-white">3+</p>
+              </div>
+              <div class="rounded-3xl border border-white/10 bg-slate-900/80 p-6 shadow-soft">
+                <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Projects delivered</p>
+                <p class="mt-3 text-4xl font-semibold text-white">25+</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative isolate overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/70 p-8 shadow-soft sm:p-10">
+            <img src="assets/hero.svg" alt="Data visualization illustration" class="mx-auto h-80 w-full max-w-xl animate-float" />
+            <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/90 to-transparent"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto mt-20 max-w-7xl px-6 sm:px-8 lg:px-12">
+        <div class="grid gap-12 lg:grid-cols-[0.9fr_0.7fr] lg:items-start">
+          <div class="space-y-6">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">About Me</p>
+            <h2 class="text-3xl font-semibold text-white sm:text-4xl">Data analysis with an impact-focused mindset.</h2>
+            <p class="text-lg leading-8 text-slate-300">My journey blends technical analytics and practical business insights. I design dashboards, clean datasets, automate reporting, and communicate findings clearly to stakeholders.</p>
+            <div class="space-y-4 rounded-3xl border border-white/10 bg-slate-900/80 p-6 shadow-soft">
+              <div class="flex items-center gap-4">
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-500/15 text-indigo-200">SQL</span>
+                <div>
+                  <p class="font-semibold text-white">Database Analysis</p>
+                  <p class="text-sm text-slate-400">Query optimization, reporting, ETL pipelines.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500/15 text-emerald-200">BI</span>
+                <div>
+                  <p class="font-semibold text-white">Dashboard Design</p>
+                  <p class="text-sm text-slate-400">Interactive visuals with Power BI and Tableau.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6 rounded-[2rem] border border-white/10 bg-slate-900/90 p-8 shadow-soft">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">Core Skills</p>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-3xl bg-slate-950/80 p-4 text-center">
+                <p class="text-3xl font-semibold text-white">Excel</p>
+                <p class="mt-2 text-sm text-slate-400">Advanced formulas, data modeling.</p>
+              </div>
+              <div class="rounded-3xl bg-slate-950/80 p-4 text-center">
+                <p class="text-3xl font-semibold text-white">Power BI</p>
+                <p class="mt-2 text-sm text-slate-400">Reports, DAX, visual storytelling.</p>
+              </div>
+              <div class="rounded-3xl bg-slate-950/80 p-4 text-center">
+                <p class="text-3xl font-semibold text-white">Python</p>
+                <p class="mt-2 text-sm text-slate-400">Pandas, NumPy, data cleansing.</p>
+              </div>
+              <div class="rounded-3xl bg-slate-950/80 p-4 text-center">
+                <p class="text-3xl font-semibold text-white">SQL</p>
+                <p class="mt-2 text-sm text-slate-400">Joins, aggregation, performance tuning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools" class="mx-auto mt-20 max-w-7xl px-6 sm:px-8 lg:px-12">
+        <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">Tools & Technologies</p>
+            <h2 class="mt-4 text-3xl font-semibold text-white sm:text-4xl">A toolkit built for data analysis and impact.</h2>
+          </div>
+          <p class="max-w-2xl text-slate-300">From exploratory analysis to automated dashboards, I use the latest data tools to support smarter decisions and measurable improvement.</p>
+        </div>
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="glass-card rounded-3xl border border-white/10 p-6 text-center shadow-soft">
+            <img src="assets/experience.svg" alt="Power BI icon" class="mx-auto h-16 w-16" />
+            <h3 class="mt-6 text-xl font-semibold text-white">Power BI</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-400">Interactive dashboards, reports, and KPI tracking.</p>
+          </div>
+          <div class="glass-card rounded-3xl border border-white/10 p-6 text-center shadow-soft">
+            <img src="assets/education.svg" alt="SQL icon" class="mx-auto h-16 w-16" />
+            <h3 class="mt-6 text-xl font-semibold text-white">SQL</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-400">Data querying, transformation, and insights generation.</p>
+          </div>
+          <div class="glass-card rounded-3xl border border-white/10 p-6 text-center shadow-soft">
+            <img src="assets/hero.svg" alt="Python icon" class="mx-auto h-16 w-16" />
+            <h3 class="mt-6 text-xl font-semibold text-white">Python</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-400">Automation, cleansing, and analytical modeling.</p>
+          </div>
+          <div class="glass-card rounded-3xl border border-white/10 p-6 text-center shadow-soft">
+            <img src="assets/contact.svg" alt="Excel icon" class="mx-auto h-16 w-16" />
+            <h3 class="mt-6 text-xl font-semibold text-white">Excel & Tableau</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-400">Advanced analytics, dashboards, and visual storytelling.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="mx-auto mt-20 max-w-7xl px-6 sm:px-8 lg:px-12">
+        <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+          <div class="space-y-4">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">Experience</p>
+            <h2 class="text-3xl font-semibold text-white sm:text-4xl">Professional highlights and achievements.</h2>
+            <p class="text-slate-300">I have delivered analytics solutions for sales performance, customer segmentation, inventory control, and operational reporting.</p>
+          </div>
+          <div class="space-y-6">
+            <div class="rounded-3xl border border-white/10 bg-slate-900/85 p-7 shadow-soft">
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <h3 class="text-xl font-semibold text-white">Data Analyst</h3>
+                  <p class="text-sm text-slate-400">Freelance / Remote — 2023 to present</p>
+                </div>
+                <span class="rounded-full bg-emerald-500/10 px-4 py-2 text-sm font-semibold text-emerald-200">Market analytics</span>
+              </div>
+              <p class="mt-5 text-slate-300">Delivered insights from sales and customer behavior data using SQL, Power BI, and Python dashboards.</p>
+              <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-400">
+                <li>Reduced reporting time by 40% with automated ETL workflows and data pipelines.</li>
+                <li>Created monthly dashboards to support leadership decision-making and KPI monitoring.</li>
+                <li>Built predictive segmentation models for customer targeting and churn mitigation.</li>
+              </ul>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-slate-900/85 p-7 shadow-soft">
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <h3 class="text-xl font-semibold text-white">Junior Analyst</h3>
+                  <p class="text-sm text-slate-400">Corporate training program — 2021 to 2023</p>
+                </div>
+                <span class="rounded-full bg-indigo-500/10 px-4 py-2 text-sm font-semibold text-indigo-200">Reporting optimization</span>
+              </div>
+              <p class="mt-5 text-slate-300">Collaborated with data teams to improve report accuracy and implement data validation rules.</p>
+              <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-400">
+                <li>Designed dashboards that tracked weekly operational KPIs and inventory fluctuations.</li>
+                <li>Prepared executive summaries and presented actionable insights to stakeholders.</li>
+                <li>Maintained databases and supported data governance best practices.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="mx-auto mt-20 max-w-7xl px-6 sm:px-8 lg:px-12">
+        <div class="space-y-6 text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">Education</p>
+          <h2 class="text-3xl font-semibold text-white sm:text-4xl">Academic background and training.</h2>
+          <p class="mx-auto max-w-3xl text-slate-300">Equipped with strong theoretical knowledge and practical tools from structured coursework and real-world analytics training.</p>
+        </div>
+        <div class="mt-10 grid gap-6 lg:grid-cols-3">
+          <div class="glass-card rounded-3xl border border-white/10 p-6 shadow-soft">
+            <h3 class="text-xl font-semibold text-white">B.Sc. in Computer Science</h3>
+            <p class="mt-2 text-sm text-slate-400">University of Karachi, 2018 — 2022</p>
+            <p class="mt-4 text-slate-300">Focus on data structures, statistics, and applied programming. Completed projects in data analysis, machine learning basics, and dashboard reporting.</p>
+          </div>
+          <div class="glass-card rounded-3xl border border-white/10 p-6 shadow-soft">
+            <h3 class="text-xl font-semibold text-white">Professional Certification</h3>
+            <p class="mt-2 text-sm text-slate-400">Data Analytics, Coursera — 2023</p>
+            <p class="mt-4 text-slate-300">Completed training in Excel, SQL, Tableau, and Python for data analytics, including case studies and client-focused analytics reports.</p>
+          </div>
+          <div class="glass-card rounded-3xl border border-white/10 p-6 shadow-soft">
+            <h3 class="text-xl font-semibold text-white">Tools & Soft Skills</h3>
+            <p class="mt-2 text-sm text-slate-400">Statistics, problem solving, communication.</p>
+            <p class="mt-4 text-slate-300">Strong analytical thinking, teamwork, stakeholder communication, and experience presenting results in business terms.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="mx-auto mt-20 max-w-7xl px-6 sm:px-8 lg:px-12 pb-20">
+        <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div class="space-y-6">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">Contact</p>
+            <h2 class="text-3xl font-semibold text-white sm:text-4xl">Let’s collaborate on your next data project.</h2>
+            <p class="text-slate-300">Whether you need dashboard creation, data storytelling, or analytics support, I’m ready to help your team make data-driven decisions.</p>
+            <div class="space-y-4 rounded-3xl border border-white/10 bg-slate-900/85 p-6 shadow-soft">
+              <div class="flex items-center gap-4">
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500/10 text-emerald-200">📧</span>
+                <div>
+                  <p class="font-semibold text-white">Email</p>
+                  <p class="text-sm text-slate-400">mohammadfaize@example.com</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-500/10 text-indigo-200">📍</span>
+                <div>
+                  <p class="font-semibold text-white">Location</p>
+                  <p class="text-sm text-slate-400">Karachi, Pakistan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form id="contactForm" class="space-y-6 rounded-3xl border border-white/10 bg-slate-900/95 p-8 shadow-soft" autocomplete="off">
+            <div>
+              <label for="name" class="block text-sm font-medium text-slate-200">Name</label>
+              <input type="text" id="name" name="name" required class="mt-2 w-full rounded-3xl border border-slate-700 bg-slate-950/90 px-4 py-3 text-slate-100 outline-none transition focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/20" placeholder="Your name" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-200">Email</label>
+              <input type="email" id="email" name="email" required class="mt-2 w-full rounded-3xl border border-slate-700 bg-slate-950/90 px-4 py-3 text-slate-100 outline-none transition focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/20" placeholder="you@example.com" />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-slate-200">Message</label>
+              <textarea id="message" name="message" rows="5" required class="mt-2 w-full rounded-3xl border border-slate-700 bg-slate-950/90 px-4 py-3 text-slate-100 outline-none transition focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/20" placeholder="Tell me about your project"></textarea>
+            </div>
+            <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400">Send Message</button>
+            <p id="formFeedback" class="text-sm text-emerald-300"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

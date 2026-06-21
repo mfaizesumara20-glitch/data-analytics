@@ -1,0 +1,8 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <rect width="120" height="120" rx="28" fill="#0f172a"/>
+  <path d="M52 36h12v52H52z" fill="#f59e0b"/>
+  <path d="M70 44h12v34H70z" fill="#2563eb"/>
+  <path d="M34 52h12v28H34z" fill="#e11d48"/>
+  <circle cx="60" cy="86" r="6" fill="#fff"/>
+  <text x="60" y="108" fill="#fff" font-family="Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">BI</text>
+</svg>

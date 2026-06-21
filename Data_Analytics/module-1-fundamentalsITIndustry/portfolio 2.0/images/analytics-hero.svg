@@ -1,0 +1,19 @@
+<svg viewBox="0 0 640 520" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <rect width="640" height="520" rx="40" fill="#0f172a"/>
+  <circle cx="160" cy="160" r="90" fill="#1d4ed8" opacity="0.22"/>
+  <circle cx="190" cy="180" r="56" fill="#e63946" opacity="0.18"/>
+  <path d="M92 356c15-74 87-124 161-109s124 87 109 161c-15 74-87 124-161 109-74-15-124-87-109-161Z" fill="#fff" opacity="0.05"/>
+  <rect x="60" y="64" width="520" height="340" rx="32" fill="#0f172a" stroke="#1d4ed8" stroke-width="4"/>
+  <rect x="86" y="106" width="468" height="58" rx="16" fill="#14203a"/>
+  <rect x="110" y="140" width="120" height="12" rx="6" fill="#3b82f6"/>
+  <rect x="110" y="166" width="180" height="12" rx="6" fill="#e63946"/>
+  <rect x="110" y="192" width="80" height="12" rx="6" fill="#ffffff" opacity="0.45"/>
+  <rect x="110" y="236" width="420" height="14" rx="7" fill="#1d4ed8"/>
+  <rect x="110" y="262" width="320" height="14" rx="7" fill="#e63946"/>
+  <rect x="110" y="288" width="260" height="14" rx="7" fill="#ffffff" opacity="0.45"/>
+  <path d="M136 356h368v24a18 18 0 0 1-18 18H154a18 18 0 0 1-18-18v-24Z" fill="#14203a"/>
+  <circle cx="208" cy="310" r="28" fill="#3b82f6"/>
+  <circle cx="418" cy="310" r="20" fill="#e63946"/>
+  <path d="M346 284c18 0 32 14 32 32" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+  <path d="M320 336h82" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+</svg>

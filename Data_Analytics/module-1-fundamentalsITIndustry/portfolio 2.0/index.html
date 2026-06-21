@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.Faize | Data Analyst Portfolio</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#E63946',
+              blue: '#1D4ED8',
+              black: '#0F172A',
+              gray: '#F8FAFC'
+            }
+          },
+          boxShadow: {
+            glow: '0 20px 60px rgba(230, 57, 70, 0.16)'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-14px)' }
+            },
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(24px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+            fadeInUp: 'fadeInUp 1s ease forwards'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, rgba(230, 57, 70, 0.22), transparent 18%), radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.92), transparent 28%), linear-gradient(180deg, #0b0f16 0%, #0f172a 100%);
+      color: #f8fafc;
+    }
+    .glass-card {
+      background: rgba(15,23,42,0.86);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #f8fafc;
+    }
+    .motion-highlight {
+      background: linear-gradient(90deg, rgba(230,57,70,0.9), rgba(29,78,216,0.95));
+      background-size: 200% 200%;
+      animation: gradientShift 6s ease infinite;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="text-white antialiased">
+  <div class="mx-auto max-w-7xl px-5 py-6 lg:px-10">
+    <header class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+      <div>
+        <a href="#home" class="inline-flex items-center gap-3 text-xl font-semibold text-white">
+          <div class="h-11 w-11 rounded-full bg-brand-red flex items-center justify-center shadow-glow">MF</div>
+          <span>M.Faize</span>
+        </a>
+      </div>
+      <nav class="flex flex-wrap gap-4 text-sm text-slate-200/80">
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#tools" class="hover:text-white transition">Tools</a>
+        <a href="#experience" class="hover:text-white transition">Experience</a>
+        <a href="#goals" class="hover:text-white transition">Goals</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+        <a href="./resume.pdf" target="_blank" class="rounded-full border border-white/15 bg-black/60 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-blue/10">Resume</a>
+      </nav>
+    </header>
+
+    <main id="home" class="mt-14 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+      <section class="space-y-8">
+        <span class="inline-flex items-center gap-3 rounded-full border border-brand-red/40 bg-black/30 px-4 py-2 text-sm text-brand-red backdrop-blur-sm">
+          Data Analyst Portfolio • Responsive design • Tailwind CSS 4
+        </span>
+        <div class="space-y-6">
+          <h1 class="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">M. Faize<br /><span class="text-brand-blue">Transforming raw data into insight-driven decisions.</span></h1>
+          <p class="max-w-2xl text-slate-300 text-lg leading-8">I specialize in analytics, visualization, and intelligent reporting. With a strong background in SQL, Python, Power BI and dashboard development, I help businesses improve performance through data-driven strategy.</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-3">
+          <a href="#contact" class="rounded-full bg-brand-red px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-white transition hover:scale-[1.02] hover:bg-red-600">Get in touch</a>
+          <a href="#tools" class="rounded-full border border-white/15 bg-black/60 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-white transition hover:border-brand-blue hover:text-brand-blue">Explore tools</a>
+          <a href="./resume.pdf" target="_blank" class="rounded-full border border-brand-blue bg-brand-blue/10 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-brand-blue/20">Download Resume</a>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden rounded-[32px] border border-white/10 bg-black/80 p-6 shadow-glow">
+        <div class="absolute -left-24 top-10 h-60 w-60 rounded-full bg-brand-blue/20 blur-3xl"></div>
+        <div class="absolute -right-24 bottom-10 h-56 w-56 rounded-full bg-brand-red/20 blur-3xl"></div>
+        <img src="./images/analytics-hero.svg" alt="Analytics illustration" class="relative mx-auto h-full w-full max-w-lg animate-float" />
+      </section>
+    </main>
+
+    <section id="about" class="scroll-mt-28 mt-20 space-y-8">
+      <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="text-sm uppercase tracking-[0.32em] text-brand-blue">About Me</p>
+          <h2 class="text-3xl font-bold text-white">Education & Experience</h2>
+        </div>
+        <div class="max-w-xl text-slate-300">A practical data analyst with strong academic grounding and real-world project delivery. I combine statistical analysis with storytelling to help organizations make measurable progress.</div>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-3">
+        <article class="glass-card rounded-3xl p-6 shadow-xl transition hover:-translate-y-2 hover:shadow-glow">
+          <h3 class="text-xl font-semibold text-white">Education</h3>
+          <div class="mt-4 space-y-4 text-slate-300">
+            <div class="rounded-3xl border border-white/10 bg-black/70 p-4">
+              <p class="font-semibold text-white">B.Sc. in Computer Science</p>
+              <p class="text-sm text-slate-300">Focus on data analytics, statistics and business intelligence.</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-black/70 p-4">
+              <p class="font-semibold text-white">Certification - Power BI Expert</p>
+              <p class="text-sm text-slate-300">Developed dashboards and analytics solutions in real business cases.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass-card rounded-3xl p-6 shadow-xl transition hover:-translate-y-2 hover:shadow-glow">
+          <h3 class="text-xl font-semibold text-white">Experience</h3>
+          <div class="mt-4 space-y-4 text-slate-300">
+            <div class="rounded-3xl border border-white/10 bg-black/70 p-4">
+              <p class="font-semibold text-white">Data Analyst Intern</p>
+              <p class="text-sm text-slate-300">Created automated reports to support marketing and operations teams.</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-black/70 p-4">
+              <p class="font-semibold text-white">Freelance Analytics Consultant</p>
+              <p class="text-sm text-slate-300">Delivered dashboards, predictive models and KPI frameworks for small businesses.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass-card rounded-3xl p-6 shadow-xl transition hover:-translate-y-2 hover:shadow-glow">
+          <h3 class="text-xl font-semibold text-white">How I Work</h3>
+          <div class="mt-4 space-y-4 text-slate-300">
+            <p>Data preparation, validation and storytelling with actionable dashboards.</p>
+            <p>Strong collaboration with stakeholders and fast iterative delivery.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tools" class="scroll-mt-28 mt-20 space-y-8">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="text-sm uppercase tracking-[0.32em] text-brand-red">Core Toolkit</p>
+          <h2 class="text-3xl font-bold text-white">Tools & Technologies</h2>
+        </div>
+        <p class="max-w-xl text-slate-300/90">A toolkit balanced between analytics software, programming languages, BI platforms, and research workflows.</p>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="glass-card rounded-3xl p-6 text-center transition hover:-translate-y-2 hover:bg-brand-blue/10">
+          <img src="./images/tool-sql.svg" alt="SQL" class="mx-auto h-20 w-20" />
+          <h3 class="mt-5 text-lg font-semibold text-white">SQL</h3>
+          <p class="mt-2 text-slate-300">Relational queries, joins, aggregation and optimization.</p>
+        </div>
+        <div class="glass-card rounded-3xl p-6 text-center transition hover:-translate-y-2 hover:bg-brand-red/10">
+          <img src="./images/tool-python.svg" alt="Python" class="mx-auto h-20 w-20" />
+          <h3 class="mt-5 text-lg font-semibold text-white">Python</h3>
+          <p class="mt-2 text-slate-300">Pandas, NumPy, data cleaning, modeling and automation.</p>
+        </div>
+        <div class="glass-card rounded-3xl p-6 text-center transition hover:-translate-y-2 hover:bg-brand-blue/10">
+          <img src="./images/tool-powerbi.svg" alt="Power BI" class="mx-auto h-20 w-20" />
+          <h3 class="mt-5 text-lg font-semibold text-white">Power BI</h3>
+          <p class="mt-2 text-slate-300">Interactive dashboards, reports, and KPI tracking.</p>
+        </div>
+        <div class="glass-card rounded-3xl p-6 text-center transition hover:-translate-y-2 hover:bg-brand-red/10">
+          <img src="./images/tool-excel.svg" alt="Excel" class="mx-auto h-20 w-20" />
+          <h3 class="mt-5 text-lg font-semibold text-white">Excel</h3>
+          <p class="mt-2 text-slate-300">Advanced formulas, pivot tables and automation with Power Query.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="scroll-mt-28 mt-20 space-y-8">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="text-sm uppercase tracking-[0.32em] text-brand-blue">Proven Work</p>
+          <h2 class="text-3xl font-bold text-white">Experience Highlights</h2>
+        </div>
+        <p class="max-w-xl text-slate-300/90">Combining technical delivery with strategic insights across analytics projects.</p>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-3">
+        <article class="glass-card rounded-[32px] p-6 transition hover:-translate-y-2 hover:shadow-glow">
+          <span class="inline-flex rounded-full bg-black/50 px-3 py-1 text-xs uppercase tracking-[0.24em] text-brand-red">Dashboard build</span>
+          <h3 class="mt-5 text-xl font-semibold text-white">Marketing Analytics</h3>
+          <p class="mt-3 text-slate-300">Built a campaign performance suite to identify high-value segments and reduce cost per acquisition.</p>
+        </article>
+        <article class="glass-card rounded-[32px] p-6 transition hover:-translate-y-2 hover:shadow-glow">
+          <span class="inline-flex rounded-full bg-black/50 px-3 py-1 text-xs uppercase tracking-[0.24em] text-brand-blue">Automation</span>
+          <h3 class="mt-5 text-xl font-semibold text-white">Report Automation</h3>
+          <p class="mt-3 text-slate-300">Streamlined weekly reporting with reusable scripts and refreshable BI dashboards.</p>
+        </article>
+        <article class="glass-card rounded-[32px] p-6 transition hover:-translate-y-2 hover:shadow-glow">
+          <span class="inline-flex rounded-full bg-black/50 px-3 py-1 text-xs uppercase tracking-[0.24em] text-white">Stakeholder insights</span>
+          <h3 class="mt-5 text-xl font-semibold text-white">Data Strategy</h3>
+          <p class="mt-3 text-slate-300">Delivered actionable analytics recommendations across sales and operations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="scroll-mt-28 mt-20 space-y-8">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="text-sm uppercase tracking-[0.32em] text-brand-blue">Case Studies</p>
+          <h2 class="text-3xl font-bold text-white">Portfolio Projects</h2>
+        </div>
+        <p class="max-w-xl text-slate-300/90">Selected analytics projects with measurable impact on performance, efficiency and business insight.</p>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-3">
+        <article class="glass-card rounded-[32px] p-6 transition hover:-translate-y-2 hover:shadow-glow">
+          <div class="inline-flex items-center gap-3 rounded-3xl bg-brand-blue/10 px-4 py-2 text-sm font-semibold text-brand-blue">
+            <span>01</span>
+            <span>Sales Dashboard</span>
+          </div>
+          <h3 class="mt-5 text-xl font-semibold text-white">Revenue Performance</h3>
+          <p class="mt-3 text-slate-300">Built a dynamic sales dashboard that tracked conversion, growth, and revenue by region.</p>
+        </article>
+        <article class="glass-card rounded-[32px] p-6 transition hover:-translate-y-2 hover:shadow-glow">
+          <div class="inline-flex items-center gap-3 rounded-3xl bg-brand-red/10 px-4 py-2 text-sm font-semibold text-brand-red">
+            <span>02</span>
+            <span>Efficiency Audit</span>
+          </div>
+          <h3 class="mt-5 text-xl font-semibold text-white">Process Optimization</h3>
+          <p class="mt-3 text-slate-300">Analyzed operations data to identify bottlenecks, delivering a 17% improvement in throughput.</p>
+        </article>
+        <article class="glass-card rounded-[32px] p-6 transition hover:-translate-y-2 hover:shadow-glow">
+          <div class="inline-flex items-center gap-3 rounded-3xl bg-white/10 px-4 py-2 text-sm font-semibold text-white">
+            <span>03</span>
+            <span>Client Scorecard</span>
+          </div>
+          <h3 class="mt-5 text-xl font-semibold text-white">Stakeholder Insights</h3>
+          <p class="mt-3 text-slate-300">Created an executive scorecard to improve decision-making for leadership across five business units.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="goals" class="scroll-mt-28 mt-20 space-y-8">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="text-sm uppercase tracking-[0.32em] text-brand-red">Achievements</p>
+          <h2 class="text-3xl font-bold text-white">Goals Achieved</h2>
+        </div>
+        <p class="max-w-xl text-slate-300/90">Measurable wins from projects, training and analytics adoption.</p>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="rounded-[28px] border border-white/10 bg-black/70 p-6 text-center transition hover:-translate-y-2 hover:bg-brand-blue/10">
+          <p class="text-4xl font-bold text-brand-blue">30%</p>
+          <p class="mt-3 text-slate-300">Faster reporting by automating dashboard refresh routine.</p>
+        </div>
+        <div class="rounded-[28px] border border-white/10 bg-black/70 p-6 text-center transition hover:-translate-y-2 hover:bg-brand-red/10">
+          <p class="text-4xl font-bold text-brand-red">15+</p>
+          <p class="mt-3 text-slate-300">Dashboards created for finance, marketing and operations.</p>
+        </div>
+        <div class="rounded-[28px] border border-white/10 bg-black/70 p-6 text-center transition hover:-translate-y-2 hover:bg-brand-blue/10">
+          <p class="text-4xl font-bold text-white">97%</p>
+          <p class="mt-3 text-slate-300">Accuracy rate maintained across data validation and ETL checks.</p>
+        </div>
+        <div class="rounded-[28px] border border-white/10 bg-black/70 p-6 text-center transition hover:-translate-y-2 hover:bg-brand-red/10">
+          <p class="text-4xl font-bold text-white">8</p>
+          <p class="mt-3 text-slate-300">Years of study and practical project work in analytics field.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="scroll-mt-28 mt-20 rounded-[40px] border border-white/10 bg-black/70 p-8 shadow-xl">
+      <div class="grid gap-10 lg:grid-cols-[0.95fr_0.85fr] lg:items-start">
+        <div class="space-y-5">
+          <p class="text-sm uppercase tracking-[0.32em] text-brand-blue">Contact</p>
+          <h2 class="text-3xl font-bold text-white">Ready to collaborate on analytics projects?</h2>
+          <p class="max-w-xl text-slate-300/90">Send a message if you need dashboards, data strategy, reporting automation or analytics consultation.</p>
+
+          <div class="space-y-4 text-slate-200/90">
+            <div class="rounded-3xl bg-black/70 p-5">
+              <p class="font-semibold text-white">Email</p>
+              <p class="text-slate-300">faize.analytics@mail.com</p>
+            </div>
+            <div class="rounded-3xl bg-black/70 p-5">
+              <p class="font-semibold text-white">Location</p>
+              <p class="text-slate-300">Remote / Hybrid analytics delivery</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="space-y-5 rounded-[30px] border border-white/10 bg-black/60 p-6 shadow-glow backdrop-blur-xl" action="#" method="POST">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <label class="block text-sm font-medium text-slate-200">
+              <span>Name</span>
+              <input type="text" name="name" required class="mt-2 w-full rounded-3xl border border-white/15 bg-black/70 px-4 py-3 text-white outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20" placeholder="M. Faize" />
+            </label>
+            <label class="block text-sm font-medium text-slate-700">
+              <span>Email</span>
+              <input type="email" name="email" required class="mt-2 w-full rounded-3xl border border-white/15 bg-black/70 px-4 py-3 text-white outline-none transition focus:border-brand-red focus:ring-2 focus:ring-brand-red/20" placeholder="you@example.com" />
+            </label>
+          </div>
+          <label class="block text-sm font-medium text-slate-200">
+            <span>Message</span>
+            <textarea name="message" rows="5" required class="mt-2 w-full rounded-3xl border border-white/15 bg-black/70 px-4 py-3 text-white outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20" placeholder="Tell me about your analytics needs..."></textarea>
+          </label>
+          <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-brand-blue px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-50 transition hover:bg-blue-500">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="mt-16 border-t border-white/10 pt-6 text-center text-sm text-slate-400">© 2026 M. Faize | Data Analyst Portfolio | Designed with red, black, blue and white theme</footer>
+  </div>
+  <script>
+    const contactForm = document.querySelector('form[action="#"]');
+    if (contactForm) {
+      contactForm.addEventListener('submit', event => {
+        event.preventDefault();
+        const name = contactForm.querySelector('input[name="name"]').value.trim();
+        const messageContainer = document.createElement('div');
+        messageContainer.className = 'fixed bottom-6 right-6 z-50 rounded-3xl bg-black/90 border border-white/10 px-5 py-4 text-sm text-white shadow-glow';
+        messageContainer.innerHTML = `<p class="font-semibold text-brand-blue">Message sent!</p><p class="mt-1 text-slate-200">Thank you, ${name || 'friend'}. I will review your request and get back to you soon.</p>`;
+        document.body.appendChild(messageContainer);
+        setTimeout(() => messageContainer.remove(), 4500);
+        contactForm.reset();
+      });
+    }
+  </script>
+</body>
+</html>
